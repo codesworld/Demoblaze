@@ -39,8 +39,8 @@ test.describe('Product Store Tests', () => {
 
     test('Test Login', async ({ page }) => {
         const loginPage = new LoginPage(page);
-        await loginPage.login(process.env.test_username!, process.env.test_password!)
-        await expect(await loginPage.welcomeUser()).toContain(process.env.test_username!)
+        await loginPage.login(process.env.TEST_USERNAME!, process.env.TEST_PASSWORD!)
+        await expect(await loginPage.welcomeUser()).toContain(process.env.TEST_USERNAME!)
 
     })
 
